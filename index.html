@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
+    <style>
+        .cv-dropdown::after {
+            content: none;
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -46,8 +51,7 @@
                 <span class="up">HI!</span>
                 <span class="down">I am Aleix Esteve</span>
             </h1>
-            <p class="header-subtitle">BACK-END DEVELOPER</p>
-
+            <p class="header-subtitle">WEB DEVELOPER</p>
             <a role="button" class="btn btn-primary" href="#portfolio">Visit My Works</a>
         </div>
     </header><!-- end of page header -->
@@ -65,9 +69,27 @@
                     <p class="section-subtitle">Who Am I ?</p>
                     <h2 class="section-title mb-3">About Me</h2>
                     <p>
-                        Willing to learn something new every day.
+                        I am an enthusiast of the IT highly motivated and passionate web developer with a solid
+                        foundation in HTML, CSS, JavaScript and PHP. Also worked with most of the pioneer web
+                        frameworks.
+                        It is made with Laravel, Django or Node.js? I can handle it.
+                        I have worked most of the time in group environments, where each member had a specific task
+                        to do, and used Git to merge the work.
+                        I am a curious and always willing to learn something new every day.
                     </p>
-                    <a role="button" class="btn-rounded btn btn-outline-primary mt-4" href="docs/CV-Aleix-eng-v1.pdf" target="_blank">Download CV</a>
+
+                    <div class="dropdown">
+                        <button class="btn-rounded btn btn-outline-primary mt-4 dropdown-toggle cv-dropdown" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Download CV
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a role="button" class="dropdown-item" href="docs/CV-Aleix-en-v1.1.1.pdf"
+                       target="_blank">CV (en)</a>
+                            <a role="button" class="dropdown-item" href="docs/CV-Aleix-es-v1.1.pdf"
+                       target="_blank">CV (es)</a>
+                        </div>
+                    </div>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -145,7 +167,8 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Proiectus.cat</h4>
-                                    <p class="font-weight-normal">A webpage to bring companies and students closer to each other.</p>
+                                    <p class="font-weight-normal">A webpage to bring companies and students closer to each other.
+                                    Worked with Laravel and Sass.</p>
                             </span>
                         </span>
                     </a>
@@ -156,7 +179,8 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>GameSave</h4>
-                                    <p class="font-weight-normal">My Degree Final Project (TFG in catalan). A platform to host game servers where payments are made trough our token.</p>
+                                    <p class="font-weight-normal">My Degree Final Project (TFG in catalan). A platform to host game servers where payments are made through our token.
+                                        Worked with Django, Docker and Ethereum testnet.</p>
                             </span>
                         </span>
                     </a>
@@ -167,7 +191,7 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Comming soon...</h4>
-                                    <p class="font-weight-normal">A website to track all your videogames on each platform and your progress on it.</p>
+                                    <p class="font-weight-normal">A website to track all your video-games on each platform and your progress on it. Just a game library.</p>
                             </span>
                         </span>
                     </a>
